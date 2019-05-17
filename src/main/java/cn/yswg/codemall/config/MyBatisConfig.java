@@ -10,6 +10,6 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@MapperScan("cn.yswg.codemall.mbg.mapper")
+@MapperScan({"cn.yswg.codemall.mbg.mapper","cn.yswg.codemall.dao"})
 public class MyBatisConfig {
 }

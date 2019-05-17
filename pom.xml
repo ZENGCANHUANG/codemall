@@ -47,16 +47,12 @@
         </dependency>
         <!--  end -->
 
-
         <!--  Mysql数据库驱动-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
-
-
-        <!-- MyBatis相关依赖 start -->
 
         <!--mybatis主依赖-->
         <dependency>
@@ -72,13 +68,6 @@
             <version>1.2.10</version>
         </dependency>
 
-
-
-
-
-
-
-
         <!-- 集成druid连接池 -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -86,34 +75,55 @@
             <version>1.1.10</version>
         </dependency>
 
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- JSON依赖 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.33</version>
+        </dependency>
+
+        <!--自定义代码生产JAR 代码生产 -->
+        <dependency>
+            <groupId>cn.yswg</groupId>
+            <artifactId>codeproduction</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!--整合redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!--SpringSecurity依赖配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!--JWT(Json Web Token)登录支持-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+
+        <!--Hutool Java工具包-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.5.7</version>
+        </dependency>
 
 
-        <!--  常用普通依赖 start  -->
 
-            <!--lombok-->
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <optional>true</optional>
-            </dependency>
-
-            <!-- JSON依赖 -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>1.2.33</version>
-            </dependency>
-
-
-
-            <!--自定义代码生产JAR 代码生产 -->
-            <dependency>
-                <groupId>cn.yswg</groupId>
-                <artifactId>codeproduction</artifactId>
-                <version>1.0</version>
-            </dependency>
-
-        <!--  end  -->
 
     </dependencies>
 

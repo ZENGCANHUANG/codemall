@@ -10,19 +10,19 @@
         <property name="endingDelimiter" value="`"/>
         <property name="javaFileEncoding" value="UTF-8"/>
         <!-- 为模型生成序列化方法-->
-        <!--<plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>-->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
         <!-- 为生成的Java模型创建一个toString方法 -->
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
         <!--分页插件-->
-        <plugin type="cn.yswg.codemall.mbg.PagePlugin" />
+        <!--<plugin type="cn.yswg.codemall.mbg.PagePlugin" />-->
 
         <!-- 整合lombok-->
-        <plugin type="cn.yswg.codemall.mbg.LombokPlugin" >
+        <plugin type="cn.yswg.codeproduction.module.mybatisgenerator.LombokPlugin" >
             <property name="hasLombok" value="true"/>
         </plugin>
 
         <!--可以自定义生成model的代码注释-->
-        <commentGenerator type="cn.yswg.codemall.mbg.CommentGenerator">
+        <commentGenerator type="cn.yswg.codeproduction.module.mybatisgenerator.CommentGenerator">
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
             <property name="suppressAllComments" value="true"/>
             <property name="suppressDate" value="true"/>
@@ -40,7 +40,7 @@
         <!--指定生成model的路径-->
         <javaModelGenerator targetPackage="cn.yswg.codemall.mbg.model" targetProject="src/main/java">
             <!--配置继承父类 value为父类路径-->
-            <property name="rootClass" value="cn.yswg.codemall.bolang.PageReqVo"/>
+            <!--<property name="rootClass" value="cn.yswg.codemall.bolang.PageReqVo"/>-->
         </javaModelGenerator>
         <!--指定生成mapper.xml的路径-->
         <sqlMapGenerator targetPackage="cn.yswg.codemall.mbg.mapper" targetProject="src/main/resources"/>
@@ -52,7 +52,7 @@
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>-->
 
-        <table tableName="ums_admin">
+        <table tableName="ums_member">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
 

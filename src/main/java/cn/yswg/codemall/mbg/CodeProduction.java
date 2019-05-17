@@ -1,8 +1,6 @@
 package cn.yswg.codemall.mbg;
 
-import cn.yswg.codemall.mbg.mapper.UmsAdminMapper;
 import cn.yswg.codeproduction.module.mybatisgenerator.MyGenerator;
-import cn.yswg.codeproduction.module.servicepoet.MyPoetBuild;
 
 /**
  * @Auther: zch
@@ -15,6 +13,6 @@ public class CodeProduction {
         //逆向工程
         MyGenerator.doGenerator("/generatorConfig.xml");
         //生产service
-        MyPoetBuild.doBuild(UmsAdminMapper.class,"cn.yswg.codemall.service");
+        //MyPoetBuild.doBuild(UmsAdminMapper.class,"cn.yswg.codemall.service");
     }
 }

@@ -1,9 +1,11 @@
 package cn.yswg.codemall.mbg.mapper;
 
+
 import cn.yswg.codemall.mbg.model.UmsAdmin;
 import cn.yswg.codemall.mbg.model.UmsAdminExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface UmsAdminMapper {
     int countByExample(UmsAdminExample example);
