@@ -19,7 +19,6 @@ public class TestDemo1 {
         BeanCopier beanCopier = BeanCopier.create(Azeng.class, Bzeng.class, false);
         BeanCopier beanCopier2 = BeanCopier.create(Bzeng.class, Azeng.class, false);
         BeanCopier beanCopier3 = BeanCopier.create(Bzeng.class, Azeng.class, true);
-
         /****************情况1**************************/
 //        long s1 = System.currentTimeMillis();
 //        Azeng a1 = getAzeng();
